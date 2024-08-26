@@ -30,7 +30,7 @@ log.setLevel(logging.INFO)
 #########################################
 # PLC
 #########################################
-PLC_SERVER_IP   = "" 
+PLC_SERVER_IP   = ""
 PLC_SERVER_PORT = 502
 
 PLC_RW_ADDR = 0x0
@@ -280,7 +280,7 @@ def runWorld():
 
     screen = pygame.display.set_mode((WORLD_SCREEN_WIDTH, WORLD_SCREEN_HEIGHT))
 
-    pygame.display.set_caption("WALLIX Beer Bottle-Filling Factory - World View")
+    pygame.display.set_caption("WALLIX Juice Bottle-Filling Factory - World View")
     clock = pygame.time.Clock()
 
     running = True
@@ -419,7 +419,7 @@ def runWorld():
         # Draw the level sensor
         draw_ball(screen, level_sensor, THECOLORS['red'])
 
-        title           = fontMedium.render(str("Beer Bottle-filling factory"), 1, THECOLORS['deepskyblue'])
+        title           = fontMedium.render(str("Juice Bottle-filling factory"), 1, THECOLORS['deepskyblue'])
         name            = fontBig.render(str("WALLIX Virtual Plant"), 1, THECOLORS['orange'])
         instructions    = fontSmall.render(str("(press ESC to quit)"), 1, THECOLORS['gray'])
 

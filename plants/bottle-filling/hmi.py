@@ -170,7 +170,7 @@ class HMIWindow(Gtk.Window):
 
 def main():
     GObject.threads_init()
-    win = HMIWindow(PLC_SERVER_IP, PLC_SERVER_PORT)
+    win = HMIWindow("win10.wallix.local", 510)
 
     win.connect("delete-event", Gtk.main_quit)
     win.connect("destroy", Gtk.main_quit)
